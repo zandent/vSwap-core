@@ -3,13 +3,6 @@ async function main() {
     console.log(`Verifying contract on Etherscan...`);
     try {
         await hre.run(`verify:verify`, {
-            address: addresses.WCFXUSDT,
-            constructorArguments: []
-    });
-    console.log(`Done for WCFXUSDT`);
-    } catch (error) {}
-    try {
-        await hre.run(`verify:verify`, {
             address: addresses.UniswapV3Factory,
             constructorArguments: [],
     });
